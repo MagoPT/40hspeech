@@ -16,10 +16,13 @@ tab4 = ["das nossas opções de desenvolvimento no futuro", "das nossas metas fi
         "dos conceitos de participação geral", "das atitudes e das atribuições da directoria", "das novas proposições",
         "das opções básicas para o sucesso do programa", "do nosso sistema de formação de quadros", "das condições apropriadas para os negócios", "dos índices pretendidos", "das formas de acção   "]
 
-tab1, tab2, tab3, tab4 = shuffle(tab1, tab2, tab3, tab4)
 
+tab1 = shuffle(tab1)
 for word1 in tab1:
+    tab2 = shuffle(tab2)
     for word2 in tab2:
+        tab3=shuffle(tab3)
         for word3 in tab3:
+            tab4=shuffle(tab4)
             for word4 in tab4:
                 print(word1 + " " + word2 + " " + word3 + " " + word4)
